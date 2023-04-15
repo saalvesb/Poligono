@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.femass.controller.RetanguloController">
+   <children>
+      <Label layoutX="60.0" layoutY="275.0" text="Area" />
+      <Label layoutX="46.0" layoutY="329.0" text="Perimetro" />
+      <TextField fx:id="TxtAreaR" layoutX="134.0" layoutY="271.0" />
+      <TextField fx:id="TxtPerimetroR" layoutX="134.0" layoutY="325.0" />
+      <Button layoutX="450.0" layoutY="296.0" mnemonicParsing="false" onAction="#BtnCalcularRet_click" text="Calcular" />
+      <Label layoutX="174.0" layoutY="48.0" text="Lado" />
+      <Label layoutX="434.0" layoutY="39.0" text="Altura" />
+      <GridPane layoutX="87.0" layoutY="93.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="X1" />
+            <Label text="Y1" GridPane.rowIndex="1" />
+            <Label text="X2" GridPane.rowIndex="2" />
+            <TextField fx:id="TxtX1" GridPane.columnIndex="1" />
+            <TextField fx:id="TxtY1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="TxtX2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Y2" GridPane.rowIndex="3" />
+            <TextField fx:id="TxtY2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="350.0" layoutY="93.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="X3" />
+            <TextField fx:id="TxtX3" GridPane.columnIndex="1" />
+            <Label text="Y3" GridPane.rowIndex="1" />
+            <TextField fx:id="TxtY3" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="TxtX4" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="TxtY4" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="X4" GridPane.rowIndex="2" />
+            <Label text="Y4" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+   </children>
+</Pane>
